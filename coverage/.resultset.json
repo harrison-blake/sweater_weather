@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/harrison/turing/mod3/projects/sweater_weather/spec/requests/api/v1/forecasts_spec.rb": {
+      "/Users/harrison/turing/mod3/projects/sweater_weather/spec/poros/salaries_spec.rb": {
         "lines": [
           1,
           null,
@@ -9,25 +9,8 @@
           1,
           1,
           1,
-          null,
           1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
+          0,
           null,
           null,
           null
@@ -300,7 +283,7 @@
           null,
           null,
           1,
-          2,
+          1,
           null,
           null,
           null,
@@ -315,111 +298,13 @@
           1,
           1,
           1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/app/controllers/api/v1/forecast_controller.rb": {
-        "lines": [
           1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/app/services/geocode_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/app/services/weather_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/app/poros/forecast.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/app/serializers/forecast_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
           null,
           null,
           null
         ]
       }
     },
-    "timestamp": 1619437759
+    "timestamp": 1619452294
   }
 }
