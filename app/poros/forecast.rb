@@ -16,9 +16,9 @@ class Forecast
               :id
 
   def initialize(data)
-    @current_weather_dt = data[:current][:dt]
-    @current_weather_sunrise = data[:current][:sunrise]
-    @current_weather_sunset = data[:current][:sunset]
+    @current_weather_dt = Time.at(data[:current][:dt]).to_s
+    @current_weather_sunrise = Time.at(data[:current][:sunrise]).to_s
+    @current_weather_sunset = Time.at(data[:current][:sunset]).to_s
     @current_weather_feels_like = data[:current][:feels_like]
     @current_weather_temp = data[:current][:temp]
     @current_weather_humidity = data[:current][:humidity]

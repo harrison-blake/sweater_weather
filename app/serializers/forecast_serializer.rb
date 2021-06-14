@@ -6,7 +6,7 @@ class ForecastSerializer
         datetime: object.current_weather_dt,
         temperature: object.current_weather_temp,
         sunrise: object.current_weather_sunrise,
-        sunset: object.current_weather_sunrise,
+        sunset: object.current_weather_sunset,
         feels_like: object.current_weather_feels_like,
         humidity: object.current_weather_humidity,
         uvi: object.current_weather_uvi,
