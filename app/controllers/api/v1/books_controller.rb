@@ -14,9 +14,9 @@ class Api::V1::BooksController < ApplicationController
     book_data[:docs].each do |book_info|
       books << Book.new(book_info)
     end
-    
+
     weather_and_books = WeatherBooks.new(forecast, books)
 
-    render json: BooksSerializer.new(weather_and_books)
+    render json: WeatherBooksSerializer.new(weather_and_books)
   end
 end

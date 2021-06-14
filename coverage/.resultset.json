@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/harrison/turing/mod3/projects/sweater_weather/spec/poros/book_spec.rb": {
+      "/Users/harrison/turing/mod3/projects/sweater_weather/spec/requests/api/v1/books_spec.rb": {
         "lines": [
           1,
           null,
@@ -9,13 +9,8 @@
           1,
           1,
           1,
-          1,
           null,
           1,
-          null,
-          0,
-          0,
-          0,
           null,
           null,
           null
@@ -309,256 +304,6 @@
           null
         ]
       },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/app/poros/book.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          100,
-          100,
-          100,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/spec/poros/forecast_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/app/poros/forecast.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          3,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/spec/requests/api/v1/books_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/spec/requests/api/v1/forecasts_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/spec/services/books_service_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/app/services/books_service.rb": {
-        "lines": [
-          1,
-          1,
-          3,
-          3,
-          null,
-          null,
-          3,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/spec/services/geocode_address_service_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/app/services/geocode_service.rb": {
-        "lines": [
-          1,
-          1,
-          3,
-          3,
-          3,
-          null,
-          null,
-          3,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/spec/services/weather_service_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/app/services/weather_service.rb": {
-        "lines": [
-          1,
-          1,
-          4,
-          4,
-          4,
-          4,
-          4,
-          null,
-          4,
-          null,
-          null
-        ]
-      },
       "/Users/harrison/turing/mod3/projects/sweater_weather/app/controllers/api/v1/books_controller.rb": {
         "lines": [
           1,
@@ -591,6 +336,103 @@
           null
         ]
       },
+      "/Users/harrison/turing/mod3/projects/sweater_weather/app/services/books_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/harrison/turing/mod3/projects/sweater_weather/app/services/geocode_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/harrison/turing/mod3/projects/sweater_weather/app/services/weather_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/harrison/turing/mod3/projects/sweater_weather/app/poros/forecast.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/harrison/turing/mod3/projects/sweater_weather/app/poros/book.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          100,
+          100,
+          100,
+          null,
+          null
+        ]
+      },
       "/Users/harrison/turing/mod3/projects/sweater_weather/app/poros/weather_books.rb": {
         "lines": [
           1,
@@ -601,6 +443,7 @@
           null,
           null,
           1,
+          null,
           1,
           1,
           1,
@@ -610,15 +453,15 @@
           null
         ]
       },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/app/serializers/books_serializer.rb": {
+      "/Users/harrison/turing/mod3/projects/sweater_weather/app/serializers/weather_books_serializer.rb": {
         "lines": [
           1,
           1,
           1,
+          1,
           null,
           1,
           1,
-          null,
           0,
           null,
           null,
@@ -628,59 +471,8 @@
           null,
           null
         ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/app/controllers/api/v1/forecast_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/harrison/turing/mod3/projects/sweater_weather/app/serializers/forecast_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1623691157
+    "timestamp": 1623692554
   }
 }

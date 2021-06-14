@@ -6,7 +6,7 @@ RSpec.describe Book do
       location = 'denver,co'
       book_data = BooksService.books_by_location(location)[:docs][0]
 
-      book = BookWithWeather.new(book_data)
+      book = Book.new(book_data)
 
       expect(book.isbn).to be_a(Array)
       expect(book.title).to be_a(String)

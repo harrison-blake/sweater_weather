@@ -12,7 +12,7 @@ RSpec.describe Forecast do
 
       forecast = Forecast.new(data)
       expect(forecast).to be_a(Forecast)
-      expect(forecast.current_weather_dt).to be_a(Integer)
+      expect(forecast.current_weather_dt).to be_a(String)
       expect(forecast.current_weather_temp).to be_a(Float)
       expect(forecast.daily_weather_dt).to be_a(Integer)
       expect(forecast.daily_weather_sunrise).to be_a(Integer)
