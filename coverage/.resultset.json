@@ -310,6 +310,16 @@
           1,
           1,
           null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
           null
         ]
       },
@@ -318,8 +328,23 @@
           1,
           null
         ]
+      },
+      "/Users/harrison/turing/mod3/projects/sweater_weather/app/services/books_service.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1623684546
+    "timestamp": 1623687224
   }
 }
