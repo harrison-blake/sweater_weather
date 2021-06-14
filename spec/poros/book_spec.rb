@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe BookWithWeather do
+RSpec.describe Book do
   describe 'happy path' do
     it "should build a book PORO based on given data" do
       location = 'denver,co'
