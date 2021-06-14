@@ -2,10 +2,17 @@ class ForecastSerializer
   include FastJsonapi::ObjectSerializer
 
     attribute :current_weather do |object|
-      binding.pry
       {
         datetime: object.current_weather_dt,
-        temperature: object.current_weather_temp
+        temperature: object.current_weather_temp,
+        sunrise: object.current_weather_sunrise,
+        sunset: object.current_weather_sunrise,
+        feels_like: object.current_weather_feels_like,
+        humidity: object.current_weather_humidity,
+        uvi: object.current_weather_uvi,
+        visibility: object.current_weather_visibility,
+        conditions: object.current_weather_conditions,
+        icon: object.current_weather_icon,
       }
     end
 
