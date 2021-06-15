@@ -1,13 +1,22 @@
 class Api::V1::ForecastController < ApplicationController
   def index
-    parsed = GeocodeService.long_and_lat(params[:location])
-    lat = parsed[:results][0][:locations][0][:latLng][:lat]
-    lng = parsed[:results][0][:locations][0][:latLng][:lng]
-    long_and_lat = [lng, lat]
-    
-    weather = WeatherService.weather(long_and_lat)
+    weather = ForecastFacade.get_weather_data(params[:location])
+
     current_weather = CurrentWeather.new(weather)
-    forecast = Forecast.new(current_weather)
+
+    daily_weather = []
+
+    weather[:daily].each_with_index do |day, i|
+      daily_weather << DailyWeather.new(day) if i < 5
+    end
+
+    hourly_weather = []
+
+    weather[:hourly].each_with_index do |day, i|
+      hourly_weather << HourlyWeather.new(day) if i < 8
+    end
+
+    forecast = Forecast.new(current_weather, daily_weather, hourly_weather)
 
     render json: ForecastSerializer.new(forecast)
   end

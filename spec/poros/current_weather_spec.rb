@@ -13,16 +13,16 @@ RSpec.describe CurrentWeather do
       current_weather = CurrentWeather.new(data)
 
       expect(current_weather).to be_a(CurrentWeather)
-      expect(current_weather.current_weather_dt).to be_a(String)
-      expect(current_weather.current_weather_sunrise).to be_a(String)
-      expect(current_weather.current_weather_sunset).to be_a(String)
-      expect(current_weather.current_weather_feels_like).to be_a(Float)
-      expect(current_weather.current_weather_humidity).to be_a(Integer)
-      expect(current_weather.current_weather_uvi).to be_a(Float)
-      expect(current_weather.current_weather_visibility).to be_a(Integer)
-      expect(current_weather.current_weather_conditions).to be_a(String)
-      expect(current_weather.current_weather_icon).to be_a(String)
-      expect(current_weather.current_weather_temp).to be_a(Float)
+      expect(current_weather.dt).to be_a(String)
+      expect(current_weather.sunrise).to be_a(String)
+      expect(current_weather.sunset).to be_a(String)
+      expect(current_weather.feels_like).to be_a(Float)
+      expect(current_weather.humidity).to be_a(Integer)
+      expect(current_weather.uvi).to be_a(Float)
+      expect(current_weather.visibility).to be_a(Integer)
+      expect(current_weather.conditions).to be_a(String)
+      expect(current_weather.icon).to be_a(String)
+      expect(current_weather.temp).to be_a(Float)
     end
   end
 end

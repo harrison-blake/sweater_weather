@@ -4,28 +4,29 @@ RSpec.describe Forecast do
   describe 'happy path' do
     it "should build a forecast PORO based on given data" do
       data = []
+      daily_weather = []
+      hourly_weather = []
       long_and_lat = [-104.984853, 39.738453]
 
       VCR.use_cassette('weather') do
         data = WeatherService.weather(long_and_lat)
       end
 
-      forecast = Forecast.new(data)
+      data[:daily].each_with_index do |day, i|
+        daily_weather << DailyWeather.new(day) if i < 5
+      end
+
+      data[:hourly].each_with_index do |day, i|
+        hourly_weather << HourlyWeather.new(day) if i < 8
+      end
+
+      forecast = Forecast.new(data, daily_weather, hourly_weather)
+
       expect(forecast).to be_a(Forecast)
-      expect(forecast.current_weather_dt).to be_a(String)
-      expect(forecast.current_weather_sunrise).to be_a(String)
-      expect(forecast.current_weather_sunset).to be_a(String)
-      expect(forecast.current_weather_feels_like).to be_a(Float)
-      expect(forecast.current_weather_humidity).to be_a(Integer)
-      expect(forecast.current_weather_uvi).to be_a(Float)
-      expect(forecast.current_weather_visibility).to be_a(Integer)
-      expect(forecast.current_weather_conditions).to be_a(String)
-      expect(forecast.current_weather_icon).to be_a(String)
-      expect(forecast.current_weather_temp).to be_a(Float)
-      expect(forecast.daily_weather_dt).to be_a(Integer)
-      expect(forecast.daily_weather_sunrise).to be_a(Integer)
-      expect(forecast.hourly_weather_dt).to be_a(Integer)
-      expect(forecast.hourly_weather_conditions).to be_a(String)
+      expect(forecast.current_weather).to be_a(Hash)
+      expect(forecast.daily_weather).to be_a(Array)
+      expect(forecast.hourly_weather).to be_a(Array)
+      expect(forecast.id).to eq(nil)
     end
   end
 end
