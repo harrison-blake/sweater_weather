@@ -17,12 +17,14 @@ describe 'Forecasts API' do
       expect(forecast[:data][:attributes]).to have_key(:current_weather)
       expect(forecast[:data][:attributes][:current_weather]).to have_key(:datetime)
       expect(forecast[:data][:attributes][:current_weather]).to have_key(:temperature)
-      expect(forecast[:data][:attributes]).to have_key(:daily_weather)
-      expect(forecast[:data][:attributes][:daily_weather]).to have_key(:date)
-      expect(forecast[:data][:attributes][:daily_weather]).to have_key(:sunrise)
-      expect(forecast[:data][:attributes]).to have_key(:hourly_weather)
-      expect(forecast[:data][:attributes][:hourly_weather]).to have_key(:time)
-      expect(forecast[:data][:attributes][:hourly_weather]).to have_key(:conditions)
+      expect(forecast[:data][:attributes][:current_weather]).to have_key(:sunrise)
+      expect(forecast[:data][:attributes][:current_weather]).to have_key(:sunset)
+      expect(forecast[:data][:attributes][:current_weather]).to have_key(:feels_like)
+      expect(forecast[:data][:attributes][:current_weather]).to have_key(:humidity)
+      expect(forecast[:data][:attributes][:current_weather]).to have_key(:uvi)
+      expect(forecast[:data][:attributes][:current_weather]).to have_key(:visibility)
+      expect(forecast[:data][:attributes][:current_weather]).to have_key(:conditions)
+      expect(forecast[:data][:attributes][:current_weather]).to have_key(:icon)
     end
   end
 end
