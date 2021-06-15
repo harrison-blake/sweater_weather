@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Forecast do
   describe 'happy path' do
-    it "should build a forecast PORO based on give data" do
+    it "should build a forecast PORO based on given data" do
       data = []
       long_and_lat = [-104.984853, 39.738453]
 
