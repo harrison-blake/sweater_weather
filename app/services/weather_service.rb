@@ -6,6 +6,7 @@ class WeatherService
       request.params['units'] = 'imperial'
       request.params['appid'] = ENV['weather_key']
     end
+    
     parsed = JSON.parse(response.body, symbolize_names: true)
   end
 end
