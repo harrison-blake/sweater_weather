@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :forecast, only: %i[index]
       resources :backgrounds, only: %i[index]
+      resources :users, only: %i[create]
     end
   end
 end
