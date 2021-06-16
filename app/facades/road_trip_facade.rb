@@ -8,7 +8,6 @@ class RoadTripFacade
     else
       trip = RoadTrip.new(directions, origin, destination)
     end
-
   end
 
   def self.get_directions(origin, destination)
