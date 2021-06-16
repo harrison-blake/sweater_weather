@@ -8,9 +8,9 @@ class Api::V1::UsersController < ApplicationController
     if user.save
       user.api_key = Generator.generate_api_key
       user.save
-      render json: user
+      render json: UserSerializer.new(user)
     else
-      render json: {error: user.errors.full_messages.to_sentence}
+      render json: {error: user.errors.full_messages.to_sentence}, status: 400
     end
   end
 end

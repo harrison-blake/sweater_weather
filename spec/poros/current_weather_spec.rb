@@ -18,7 +18,7 @@ RSpec.describe CurrentWeather do
       expect(current_weather.sunset).to be_a(String)
       expect(current_weather.feels_like).to be_a(Float)
       expect(current_weather.humidity).to be_a(Integer)
-      expect(current_weather.uvi).to be_a(Float)
+      expect(current_weather.uvi).to be_a(Integer)
       expect(current_weather.visibility).to be_a(Integer)
       expect(current_weather.conditions).to be_a(String)
       expect(current_weather.icon).to be_a(String)
