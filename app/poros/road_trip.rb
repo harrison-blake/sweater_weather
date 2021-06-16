@@ -6,20 +6,20 @@ class RoadTrip
               :temperature,
               :conditions
 
-  def initialize(data, weather)
+  def initialize(data, origin, destination, weather={})
     @id = nil
-    @start_city = concat_start_city(data)
-    @end_city = concat_end_city(data)
-    @travel_time = data[:route][:legs][0][:formattedTime]
-    @temperature = weather[:current][:temp]
-    @conditions = weather[:current][:weather][0][:description]
+    @start_city = origin
+    @end_city = destination
+    @travel_time = get_travel_time(data)
+    @temperature = weather[:current][:temp] if weather != {}
+    @conditions = weather[:current][:weather][0][:description] if weather != {}
   end
 
-  def concat_start_city(data)
-    data[:route][:locations][0][:adminArea5] + ", " + data[:route][:locations][0][:adminArea3]
-  end
-
-  def concat_end_city(data)
-    data[:route][:locations][1][:adminArea5] + ", " + data[:route][:locations][1][:adminArea3]
+  def get_travel_time(data)
+    if data[:info][:statuscode] == 402
+      return 'impossible'
+    else
+      return data[:route][:legs][0][:formattedTime]
+    end
   end
 end
