@@ -60,7 +60,7 @@ describe 'Road Trip API' do
 
       trip = JSON.parse(response.body, symbolize_names: true)
 
-      expect(response).to be_success
+      expect(response).successful?
       expect(trip[:data][:attributes][:travel_time]).to eq('impossible')
       expect(trip[:data][:attributes][:weather_at_eta][:temperature]).to eq(nil)
       expect(trip[:data][:attributes][:weather_at_eta][:conditions]).to eq(nil)

@@ -2,6 +2,9 @@ class RoadTripFacade
   def self.create_road_trip(origin, destination)
     directions = get_directions(origin, destination)
 
+    # generate exception in geocode service for error handling
+    # indtead of at facade AND poro level
+
     if directions[:info][:statuscode] != 402
       weather = ForecastFacade.get_weather_data(destination)
       trip = RoadTrip.new(directions, origin, destination, weather)

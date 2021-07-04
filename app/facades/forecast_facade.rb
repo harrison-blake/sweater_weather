@@ -9,6 +9,10 @@ class ForecastFacade
     WeatherService.weather(long_and_lat)
   end
 
+  def self.get_weather_data(long_and_lat)
+    WeatherService.weather(long_and_lat)
+  end
+
   def self.create_daily_weather(weather)
     daily_weather = []
 
